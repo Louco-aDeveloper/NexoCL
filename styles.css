@@ -19,10 +19,6 @@ body {
     color: #ffffff;
 }
 
-.navbar-nav .dropdown-menu {
-  margin-top: 24px;
-  position: static;
-}
 .dark-mode .btn-primary {
     background-color: #bb86fc;
     border-color: #bb86fc;
@@ -125,7 +121,10 @@ body {
     border: none;
     border-radius: 10px;
 }
-
+.navbar-nav .dropdown-menu {
+  margin-top: 24px;
+  position: static;
+}
 .owl-carousel .card img {
     border: 3px solid #007bff;
 }
@@ -148,6 +147,29 @@ body {
     max-width: 80%;
     height: auto;
     margin-left: -0px;
+}
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+
+  /* Posicionamiento para moverlo hacia arriba y a la derecha */
+  position: absolute; /* Posicionamos el toggle de manera absoluta */
+  top: 25px; /* Ajustamos el toggle hacia arriba */
+  right: 10px; /* Ajustamos el toggle hacia la derecha */
+}
+
+/* Asegura que los botones se comporten de manera estándar */
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+  appearance: button; /* Establece un estilo consistente para los botones */
+  border: none; /* Elimina bordes si es necesario */
+  background: transparent; /* Elimina fondo si es necesario */
 }
 
 /* Responsive Map */
@@ -204,6 +226,7 @@ body {
 
 /* Floating Navbar */
 .floating-navbar {
+  height: 90px;
     position: fixed; /* Fija el navbar */
     top: 30px; /* Ajusta el espacio entre el navbar y la parte superior */
     left: 50%; /* Lo coloca en el centro */
@@ -214,6 +237,8 @@ body {
     border-radius: 60px; /* Agrega bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el efecto flotante */
 }
+
+
 
 .navbar {
     margin: 0; /* Elimina márgenes predeterminados */
