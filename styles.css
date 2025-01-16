@@ -160,8 +160,8 @@ body {
 
   /* Posicionamiento para moverlo hacia arriba y a la derecha */
   position: absolute; /* Posicionamos el toggle de manera absoluta */
-  top: 25px; /* Ajustamos el toggle hacia arriba */
-  right: 10px; /* Ajustamos el toggle hacia la derecha */
+  top: 17px; /* Ajustamos el toggle hacia arriba */
+  right: 15px; /* Ajustamos el toggle hacia la derecha */
 }
 
 /* Asegura que los botones se comporten de manera estándar */
@@ -226,7 +226,7 @@ body {
 
 /* Floating Navbar */
 .floating-navbar {
-  height: 90px;
+  height: auto;
     position: fixed; /* Fija el navbar */
     top: 30px; /* Ajusta el espacio entre el navbar y la parte superior */
     left: 50%; /* Lo coloca en el centro */
@@ -260,6 +260,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: #333; /* Asegura que el texto de los enlaces sea visible */
+    margin-left: 20px;
 }
 
 .navbar-brand {
