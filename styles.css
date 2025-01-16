@@ -461,6 +461,7 @@ body {
     color: #ffffff;
     font-size: 1rem;
     line-height: 1.6;
+      text-align: -webkit-match-parent
   }
 
   /* Animaciones de Fade */
