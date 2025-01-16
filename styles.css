@@ -183,16 +183,25 @@ body {
 
 /* Floating Navbar */
 .floating-navbar {
-  height: auto;
-    position: fixed; /* Fija el navbar */
-    top: 30px; /* Ajusta el espacio entre el navbar y la parte superior */
-    left: 50%; /* Lo coloca en el centro */
-    transform: translateX(-50%); /* Ajusta la posición horizontal para que quede centrado */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    width: auto; /* Ajusta el ancho automáticamente */
-    padding: 10px 100px; /* Añade un poco de padding alrededor para separarlo */
-    border-radius: 60px; /* Agrega bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el efecto flotante */
+    height: auto;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: auto;
+    padding: 10px 100px;
+    border-radius: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* color de fondo inicial */
+    transition: all 0.8s ease; /* Transición suave para todos los cambios */
+}
+
+/* Efecto cuando el cursor pasa por encima */
+.floating-navbar:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumentar el tamaño de la sombra */
+    transform: translateX(-50%) scale(1.05); /* Agrandar ligeramente y mantener centrado */
 }
 
 
