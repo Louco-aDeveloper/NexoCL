@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nexo - Desarrollo Tecnologico</title>
-   <title>Botón de WhatsApp</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <title>Botón de WhatsApp</title> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     /* Estilo general del botón flotante */
     .whatsapp-float {
@@ -49,6 +48,7 @@
         transform: translateY(0);
       }
     }
+
   </style>
 </head>
 <body>
@@ -100,22 +100,23 @@
         <img src="logoooo.png" alt="Nx" style="width: 100px; height: auto;">
       </a>
   
-      <!-- Botón para colapsar navbar en pantallas pequeñas -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Contenido del navbar centrado -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#suministros">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-        </ul>
-      </div>
-  
-     
+   <!-- Botón para colapsar navbar en pantallas pequeñas -->
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+ <!-- Contenido del navbar -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#suministros">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
       
     </ul>
   </li>
@@ -127,12 +128,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   
   
-  <!-- HERO SECTION -->
-  <section id="home" class="hero-section d-flex align-items-center">
+   <!-- HERO SECTION -->
+   <section id="home" class="hero-section d-flex align-items-center">
     <div class="container text-center text-white" data-aos="fade-up">
       <h1 class="display-4 fw-bold">Nexo</h1>
       <p class="lead mb-4">Diseño y desarrollo al alcance de tus manos</p>
+      <!-- Botón funcional -->
       <a href="#suministros" class="btn btn-primary btn-lg rounded-pill shadow">Nuestros Servicios</a>
+    </div>
+  </section>
     </div>
   </section>
   
@@ -439,6 +443,8 @@
   
   <!-- Custom JS -->
   <script src="script.js"></script>
+  
+
   
 </body>
 </html>
