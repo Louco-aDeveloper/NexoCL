@@ -20,14 +20,7 @@ AOS.init({
     });
   });
   
-  // Dark Mode Toggle
-  const darkModeToggle = document.querySelector('.dark-mode-toggle');
-  const darkModeIcon = document.getElementById('darkModeIcon');
-  darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    darkModeIcon.classList.toggle('fa-moon');
-    darkModeIcon.classList.toggle('fa-sun');
-  });
+  
   
   // Back to Top Button
   const backToTopButton = document.getElementById('backToTop');
