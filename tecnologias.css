@@ -1,0 +1,298 @@
+
+
+/* Estilo general para el modo claro */
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  }
+  
+  
+  
+  
+  /* Back to Top Button */
+  #backToTop {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      display: none;
+      z-index: 1000;
+      font-size: 1.5rem;
+  }
+  
+  .bg-light {
+    --bs-bg-opacity: 1;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+      background: url('img/wp7420849-html-css-wallpapers.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+  }
+  
+  .hero-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(30, 60, 114, 0.2);
+  }
+  
+
+  
+  
+  
+  .navbar-nav .dropdown-menu {
+    margin-top: 24px;
+    position: static;
+  }
+
+ 
+  
+  .img-fluid {
+      max-width: 80%;
+      height: auto;
+      margin-left: -0px;
+  }
+  .navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+  
+    /* Posicionamiento para moverlo hacia arriba y a la derecha */
+    position: absolute; /* Posicionamos el toggle de manera absoluta */
+    top: 17px; /* Ajustamos el toggle hacia arriba */
+    right: 15px; /* Ajustamos el toggle hacia la derecha */
+  }
+  
+  /* Asegura que los botones se comporten de manera estándar */
+  [type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+    appearance: button; /* Establece un estilo consistente para los botones */
+    border: none; /* Elimina bordes si es necesario */
+    background: transparent; /* Elimina fondo si es necesario */
+  }
+  
+ 
+  /* Footer Links */
+  .footer a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+      color: #ffc107;
+  }
+  
+ 
+  /* Floating Navbar */
+  .floating-navbar {
+      height: auto;
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      width: auto;
+      padding: 10px 100px;
+      border-radius: 60px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff; /* color de fondo inicial */
+      transition: all 0.8s ease; /* Transición suave para todos los cambios */
+  }
+  
+  /* Efecto cuando el cursor pasa por encima */
+  .floating-navbar:hover {
+      background-color: #f0f0f0; /* Cambiar el color de fondo */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumentar el tamaño de la sombra */
+      transform: translateX(-50%) scale(1.05); /* Agrandar ligeramente y mantener centrado */
+  }
+  
+  
+  
+  .navbar {
+      margin: 0; /* Elimina márgenes predeterminados */
+  }
+  
+  /* Navbar Styling */
+  .navbar-nav {
+      flex: 1;
+      justify-content: center;  /* Centra los elementos dentro del navbar */
+  }
+  
+  .navbar-nav.language-select {
+      margin-left: 30px;  /* Empuja el selector de idioma a la derecha */
+  }
+  
+  .navbar-nav .nav-item.dropdown {
+      margin-left: 20px;  /* Espacio entre el selector de idioma y los enlaces */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+      color: #333; /* Asegura que el texto de los enlaces sea visible */
+      margin-left: 20px;
+  }
+  
+  .navbar-brand {
+      margin-right: -70px; /* Ajusta el espacio entre el logo y los enlaces */
+  }
+  /* Logo Styling */
+  .navbar-brand img {
+    max-height: 90px;
+    width: auto;
+    margin-left: -70px;
+  }
+  /* Dark Mode for Navbar */
+  .dark-mode .navbar {
+      background-color: #1f1f1f !important;
+  }
+  
+  .dark-mode .navbar-nav .nav-link {
+      color: #6e5c5c;
+  }
+  
+  .dark-mode .navbar-nav .nav-link:hover {
+      color: #ffc107;
+  }
+  
+  /* Hero Section with Background */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("img/fondo\ header\ tecnologias.png");
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideShow 40s infinite;
+  }
+  
+  
+  
+  
+  
+  .hero-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(30, 60, 114, 0.2);
+  }
+  
+ 
+    /* Estilo general del botón flotante */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        text-decoration: none;
+        font-size: 30px;
+      }
+  
+      /* Animación al pasar el cursor */
+      .whatsapp-float:hover {
+        transform: scale(1.2);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+      }
+  
+      /* Animación inicial */
+      .whatsapp-float.animate {
+        animation: fadeInUp 1s ease-in-out;
+      }
+  
+      /* Keyframes para la animación de entrada */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  
+      /* Asegurarse de que las tarjetas estén estilizadas y que se vean bien */
+/* Estilo para las tarjetas */
+.card {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Iconos más grandes */
+.card i {
+  font-size: 4rem;
+}
+
+/* Títulos más prominentes */
+.card h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Descripción más clara */
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Establecer Poppins como fuente para todo el bloque de Tecnologías */
+#tecnologias {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Opcional: Puedes ajustar el tamaño de la letra si lo deseas */
+#tecnologias h2 {
+  font-size: 2.5rem; /* Tamaño del título */
+  font-weight: 600; /* Peso del título */
+  margin-top: 100px;
+}
+
+#tecnologias p {
+  font-size: 1rem; /* Tamaño de los párrafos */
+  font-weight: 400; /* Peso del párrafo */
+}
+
+#tecnologias h5 {
+  font-size: 1.25rem; /* Tamaño de los subtítulos */
+  font-weight: 600; /* Peso de los subtítulos */
+}
