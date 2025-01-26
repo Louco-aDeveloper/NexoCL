@@ -110,6 +110,7 @@ body {
     max-width: 80%;
     height: auto;
     margin-left: -0px;
+    border-radius: 30px;
 }
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
